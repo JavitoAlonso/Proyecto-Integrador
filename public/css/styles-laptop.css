@@ -1,0 +1,10 @@
+@media (min-width: 769px) {
+    .description {
+      display: none;
+    }
+      /* visibility: collapse; */
+    
+    .product {
+      box-shadow: none;
+    }
+  }
