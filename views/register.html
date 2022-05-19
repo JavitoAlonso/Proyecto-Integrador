@@ -20,7 +20,10 @@
             <h1 class="w-50 w-33">
                 <img src="/img/logo-mercado-liebre.svg" width="100%">
             </h1>
-            <div class="w-50 w-33 m-center"><input class="busqueda "type="search" placeholder="Estoy buscando...."><i class="fas fa-search lupa"></i></div> 
+            <div class="search-bar w-50 w-33 m-center">
+                <input type="text" name="search" placeholder="search">
+                <button><i class="fas fa-search"></i></button>                 
+            </div>
             <p class="text-center w-100 w-33"><i class="fas fa-hand-holding-usd pr-8"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
         <nav class="nav-bar mt-8">
@@ -48,7 +51,7 @@
         <h1 class="titulo "> Registrate</h1>
         <div class="container-form">
             <label class="d-block f-16" for="name">Nombre completo</label>
-            <input class="w-100 mt-8 h-30 f-50" type="text" name="name" placeholder="Ingrese su nombre" required>
+            <input class="w-100 mt-8 h-30 f-50 border-red" type="text" name="name" placeholder="Ingrese su nombre" required>
         </div>
         <div class="container-form">
             <label class="d-block f-16"for="name">Apellido</label>
@@ -56,7 +59,7 @@
         </div>
         <div class="container-form">
             <label class="d-block f-16" for="user">Usuario</label>
-            <input class="w-100 mt-8 h-30 " type="text" name="user" placeholder="Usuario" required>
+            <input class="w-100 mt-8 h-30 border-red" type="text" name="user" placeholder="Usuario" required>
         </div>
         <div class="container-form">
             <label class="d-block f-16" for="date">Elige tu fecha de nacimiento</label>
@@ -92,15 +95,19 @@
             <input class="w-100 mt-8 h-30 " type="password" name="password-confirm" value="" placeholder="Ingrese contraceña" required>
         </div>
         <div class="boton">
-            <a href="/"><input  type="button" value="Enviar"></a>
-            <input type="reset" value="Borrar">
+            <a href="/"><input class="btn"  type="button" value="Enviar"></a>
+            <input class="btn-reset" type="reset" value="Borrar">
+        </div>
+        <div class= "container-error W-100">
+            <label class="mensaje" for="error">*Nombre completo: Debe ingresar mas de un caracter.</label>
+            <label class="mensaje" for="error">*Usuario: El usuario ingresado ya existe</label>
         </div>
         
     </main>
     <footer class="bg-white">
         <div class="section-footer p-15">
             <div >
-            <div class="credit-card"><i class="fas fa-credit-card"></i></div>
+            <div class="credit-card"><i class="fas fa-credit-card icon"></i></div>
                 <div class="text-center">
                 <h4 class="font-dgrey">Pagá con tarjeta o en efectivo</h4>
              <p class="p-8">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
@@ -108,7 +115,7 @@
         </div>
         </div>
       <div>
-          <div class="gift"><i class="fas fa-gift"></i></div>
+          <div class="gift"><i class="fas fa-gift icon"></i></div>
         <div class="text-center">
             <h4 class="font-dgrey">Envío gratis desde $ 2.500</h4>
             <p class="p-8">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
@@ -116,7 +123,7 @@
         </div>
       </div>
         <div>
-            <div class="shield"><i class="fas fa-user-shield"></i></div>
+            <div class="shield"><i class="fas fa-user-shield icon"></i></div>
         <div class="text-center">
             <h4 class="font-dgrey">Seguridad, de principio a fin</h4>
             <p class="p-8">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
