@@ -14,9 +14,9 @@ routes.get ("/shop", mainController.shop);
 routes.get ("/register",userController.register );
 routes.get ("/register-professional",userController.registerProfessionals );
 routes.get ("/login", userController.login);
-routes.get ("/account/", userController.account);
+routes.get ("/account", userController.account);
 routes.get ("/add-service", userController.addService);
-routes.post ("/create", userController.storeService);
+routes.post ("/add-service", userController.storeService);
 routes.get ("/my-service", userController.myService);
 
 module.exports = routes;

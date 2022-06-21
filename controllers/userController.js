@@ -18,7 +18,7 @@ const controlador = {
         res.render ("add-service")
     },
     storeService: (req,res) => {
-        console.log(req.body)
+        res.send(req.body)
     },
     myService: (req,res) => {
         res.render ("my-service")
